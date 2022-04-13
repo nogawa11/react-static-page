@@ -1,13 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  background-color:#282D35;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: #21222A;
+  color: white;
+  align-items: center;
+}
+
+.nav--icon {
+  width: 30px;
+}
+
+.nav--logo_text {
+  color: #61DAFB;
+  margin-left: 8px;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 22px;
+  padding: 0;
+}
+
+.nav--title {
+  color: #DEEBF8;
+  font-weight: 600;
+  padding: 0;
+}
+
+main {
+  margin: 46px 28px;
+}
+
+.main--title {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  letter-spacing: -0.05em;
+}
+
+.main--list {
+  margin-top: 24px;
+}
+
+.main--list > li {
+  line-height: 20px;
+  padding-block: 10px;
+}
+
+.main--list > li::marker {
+  color: #61DAFB;
+  font-size: 20px;
+}
+
+.main--icon {
+  position: absolute;
+  right: -370px;
+  top: 30%;
+  opacity: 0.1;
+  filter: grayscale(100%);
+  z-index: -1;
+  height: 520px;
 }
